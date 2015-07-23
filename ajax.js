@@ -10,6 +10,12 @@ var ajax = {
 			}) : t(!1, !1, !1)
 		}), s.open("GET", e, !0), s.send()
 	},
+	getSync:function(address){
+        var s=new XMLHttpRequest;
+        s.open("GET",address,!1);
+        s.send();
+        return s.response;
+	},
 	post: function(e, t, s) {
 		var n = new XMLHttpRequest;
 		n.addEventListener("readystatechange", function() {
@@ -21,6 +27,13 @@ var ajax = {
 			}) : s(!1, !1, !1)
 		}), n.open("POST", e, !0), n.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), n.send(t)
 	},
+	postSync:function(ad,dt){
+        var a=new XMLHttpRequest;
+        a.open("POST",ad,!1);
+        a.send(dt);
+        return a.response;
+	}
+	,
 	exists: function(e) {
 		var t = new XMLHttpRequest;
 		return t.open("GET", e, !1), t.send(), 404 != t.status
