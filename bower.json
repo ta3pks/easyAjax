@@ -1,0 +1,29 @@
+{
+  "name": "easyAjax",
+  "homepage": "https://github.com/nikosEfthias/easyAjax",
+  "authors": [
+    "Nikos Efthias <nikos.efthias@gmail.com>"
+  ],
+  "description": "Pure javascript easy-to-use ajax library",
+  "main": "ajax.js",
+  "moduleType": [],
+  "keywords": [
+    "ajax",
+    "easyAjax",
+    "easy",
+    "javascript",
+    "es6",
+    "xhr",
+    "xmlhttp",
+    "xmlhttprequest",
+    "request"
+  ],
+  "license": "GPLv2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
