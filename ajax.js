@@ -25,7 +25,7 @@ var ajax = {
 				loaded: e.loaded,
 				fileSize: e.total
 			}) : s(!1, !1, !1)
-		}), n.open("POST", e, !0), n.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), n.send(t)
+		}), n.open("POST", e, !0), n.setRequestHeader("Content-Type", "multipart/form-data"), n.send(t)
 	},
 	postSync:function(ad,dt){
         var a=new XMLHttpRequest;
